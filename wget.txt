@@ -1,0 +1,21 @@
+
+wget www.baidu.com -e use_proxy=on -e http_proxy=127.0.0.1:8000
+
+wget www.ctrip.com -e use_proxy=on -e http_proxy=127.0.0.1:8000
+
+ip.addr == 127.0.0.1 && tcp.port == 8000
+
+
+
+
+ipconfig
+
+wget http://127.0.0.1:8000/test1.html
+
+
+wget --method=DELETE http://127.0.0.1:8000/sample.html
+
+
+
+wget --method=PUT --header="Content-Type: text/html" --body-file="F:/sample.html" http://127.0.0.1:8000/sample.html -O - 
+
